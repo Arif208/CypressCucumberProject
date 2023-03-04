@@ -1,0 +1,26 @@
+{
+  "name": "cypressbdd",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress-run-dashboard": "npx cypress run --record --key f13f9e26-cea4-4ada-8855-981ff3d52c70",
+    "cy:run": ""
+  },
+  "keywords": [
+    "cypress",
+    "BDD",
+    "cucumber"
+  ],
+  "author": "Trainer",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^12.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
+  },
+  "cypress-cucumber-preprocessor":{
+    "nonGlobalStepDefinitions" : true,
+    "step_definitions": "cypress/e2e/login"
+  }
+}
